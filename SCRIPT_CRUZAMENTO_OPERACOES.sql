@@ -577,8 +577,8 @@ select cf.id_operacao, op.codigo, cf.id, op.nome_classe, tf.id as id_tarefa
                                    client_id, 
                                    client_secret)
                             values(seq_fab_tar_http_var_id.nextval, vid_config, vid_tarefa,
-                            'https://api.honda.com.br/dev/dac/dealers/{dealer}/schedulings/{scheduleProtocol}',
-                            'https://api.honda.com.br/dac/dealers/{dealer}/schedulings/{scheduleProtocol}',
+                            'https://api.honda.com.br/dev/dac/dealers/' || vid_dealer || '/schedulings/{scheduleProtocol}',
+                            'https://api.honda.com.br/dac/dealers/' || vid_dealer || '/schedulings/{scheduleProtocol}',
                             vaccess_token_url,
                             vclient_id,
                             vclient_secret);
@@ -636,8 +636,8 @@ select cf.id_operacao, op.codigo, cf.id, op.nome_classe, tf.id as id_tarefa
                                    client_id, 
                                    client_secret)
                             values(seq_fab_tar_http_var_id.nextval, vid_config, vid_tarefa,
-                            'https://api.honda.com.br/dev/dac/dealers/{dealer}/schedulings',
-                            'https://api.honda.com.br/dac/dealers/{dealer}/schedulings',
+                            'https://api.honda.com.br/dev/dac/dealers/' || vid_dealer || '/schedulings',
+                            'https://api.honda.com.br/dac/dealers/' || vid_dealer || '/schedulings',
                             vaccess_token_url,
                             vclient_id,
                             vclient_secret);                       
@@ -694,8 +694,8 @@ select cf.id_operacao, op.codigo, cf.id, op.nome_classe, tf.id as id_tarefa
                                    client_id, 
                                    client_secret)
                             values(seq_fab_tar_http_var_id.nextval, vid_config, vid_tarefa,                            
-                            'https://api.honda.com.br/dev/dac/dealers/{dealer}/schedulings?statusSchedule=novo%2Cnovo_cancelado%2Cnovo_reagendado_beginDateTime={dataagenda} 00:01:00'||'&'||'perPage=100'||'&'||'page=1',
-                            'https://api.honda.com.br/dac/dealers/{dealer}/schedulings?statusSchedule=novo%2Cnovo_cancelado%2Cnovo_reagendado_beginDateTime={dataagenda} 00:01:00'||'&'||'perPage=100'||'&'||'page=1',
+                            'https://api.honda.com.br/dev/dac/dealers/' || vid_dealer || '/schedulings?statusSchedule=novo%2Cnovo_cancelado%2Cnovo_reagendado_beginDateTime={dataagenda} 00:01:00'||'&'||'perPage=100'||'&'||'page=1',
+                            'https://api.honda.com.br/dac/dealers/' || vid_dealer || '/schedulings?statusSchedule=novo%2Cnovo_cancelado%2Cnovo_reagendado_beginDateTime={dataagenda} 00:01:00'||'&'||'perPage=100'||'&'||'page=1',
                             vaccess_token_url,
                             vclient_id,
                             vclient_secret);
@@ -757,8 +757,8 @@ select cf.id_operacao, op.codigo, cf.id, op.nome_classe, tf.id as id_tarefa
                                    client_id, 
                                    client_secret)
                             values(seq_fab_tar_http_var_id.nextval, vid_config, vid_tarefa,
-                            'https://api.honda.com.br/dev/dac/dealers/{dealer}/schedulings/{scheduleProtocol}',
-                            'https://api.honda.com.br/dac/dealers/{dealer}/schedulings/{scheduleProtocol}',
+                            'https://api.honda.com.br/dev/dac/dealers/' || vid_dealer || '/schedulings/{scheduleProtocol}',
+                            'https://api.honda.com.br/dac/dealers/' || vid_dealer || '/schedulings/{scheduleProtocol}',
                             vaccess_token_url,
                             vclient_id,
                             vclient_secret);
